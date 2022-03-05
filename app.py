@@ -1,5 +1,8 @@
 from dataclasses import dataclass
 
+"""
+This is a regular user model
+"""
 @dataclass
 class Customer:
 	id: int
@@ -16,8 +19,13 @@ class Customer:
 	def __repr__(self):
 		return 'This object represents {}'.format(self.username)
 
+
+
 base_user = {"id":1, "email": 'solomonmarvel@hotmail.com', 
 				"username": 'solomon', "password": 'abcd12345'}
 
 marv = Customer(base_user['id'], base_user['email'], 
 	base_user['username'], base_user['password'])
+
+
+
